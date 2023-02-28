@@ -1,0 +1,50 @@
+<div class="d-flex align-items-center" style="min-height: 100vh">
+  <div class="frame container text-center col-sm-4 ">
+    <div class="row align-items-center ">  
+      <div class="col-12">
+        <div class="col-8 form-control text-lg-right" 
+             style="margin-bottom: 5px; margin-top : 15px; height:38px;" 
+             type="text">{{input}}
+        </div>
+        <div class="col-8 form-control text-lg-right" 
+             style="margin-bottom: 15px; height:38px;" 
+             type="text">{{result}}
+        </div>
+      </div> 
+    <div class="col-12">
+      <div class="col num-block">
+        <button class="btn col-6 num-op" (click)='onClear()'>C</button>
+        <button class="btn col-3 num-op" (click)='deleteLastDigit()'>XD</button>
+        <button class="btn col-3 num-op" (click)='onInputOp("/")'>/</button>
+      </div>
+      <div class="col num-block">
+        <button class="btn col-3 num-color"(click)='onInput("7")'>7</button>
+        <button class="btn col-3 num-color" (click)='onInput("8")'>8</button>
+        <button class="btn col-3 num-color" (click)='onInput("9")'>9</button>
+        <button class="btn col-3 num-op" (click)='onInputOp("X")'>X</button>
+      </div>
+      <div class="col num-block">
+        <button class="btn col-3 num-color" (click)='onInput("4")'>4</button>
+        <button class="btn col-3 num-color" (click)='onInput("5")'>5</button>
+        <button class="btn col-3 num-color" (click)='onInput("6")'>6</button>
+        <button class="btn col-3 num-op" (click)='onInputOp("-")'>-</button>
+      </div>
+      <div class="col num-block">
+        <button class="btn col-3 num-color" (click)='onInput("1")'>1</button>
+        <button class="btn col-3 num-color" (click)='onInput("2")'>2</button>
+        <button class="btn col-3 num-color" (click)='onInput("3")'>3</button>
+        <button class="btn col-3 num-op" (click)='onInputOp("+")'>+</button>
+      </div>
+      <div class="col res-block">
+        <button class="btn col-3 num-op" (click)='onChangeSign()'>+/-</button>
+        <button class="btn col-3 num-color" (click)='onInput("0")'>0</button>
+        <button class="btn col-3 num-op" (click)='onInputDes(".")'>.</button>
+        <button class="btn col-3 num-op"(click)='onResult()'>=</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

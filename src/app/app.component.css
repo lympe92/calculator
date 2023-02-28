@@ -1,0 +1,25 @@
+.frame { 
+    border : 2px solid #000000;
+    border-radius: 0.5%;
+}
+.btn{
+    margin-right:2px;
+    color:white;
+}  
+.num-block{
+    margin-bottom: 8px;
+    display: flex;
+}
+.res-block{
+    margin-bottom: 15px;
+    display: flex;
+}
+.num-color{
+    background-color:#fcbc58;
+}
+.num-op{
+    background-color:#f57c51;
+}
+.container{
+    background-color: #e0ddca;
+}
